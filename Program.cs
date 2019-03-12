@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Management;
 using System.Diagnostics;
+using System.IO.Ports;
 
 namespace CpuAndRamMonitor
 {
@@ -12,9 +13,11 @@ namespace CpuAndRamMonitor
     {
        static PerformanceCounter cpuCounter;
        static  PerformanceCounter ramCounter;
+        static SerialPort port;
         static void Main(string[] args)
         {
             Timer();
+            
         }
         public static float getCurrentCpuUsage()
         {
@@ -29,7 +32,7 @@ namespace CpuAndRamMonitor
         {
             for (int i = 0; i < 10;)
             {
-                cpuCounter = new PerformanceCounter("Process", "% Processor Time", "_Total");
+                cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
                 ramCounter = new PerformanceCounter("Memory", "Available MBytes");
 
                 float First = cpuCounter.NextValue();
