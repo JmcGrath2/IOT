@@ -12,10 +12,9 @@ namespace WindowsFormsApp1
        static PerformanceCounter cpu = new PerformanceCounter("Processor", "% Processor Time", "_Total");
        static PerformanceCounter ram = new PerformanceCounter("Memory", "Available MBytes");
 
-        static void Main()
+        private static void Main()
         {
-            getCpuUsage();
-            getAvailableRam();
+           
         }
 
 

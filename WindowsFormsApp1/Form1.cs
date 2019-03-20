@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
 
         private void SENDDATA_Click(object sender, EventArgs e)
         {
-            serialPort1.Write(yes.getCpuUsage() + yes.getAvailableRam());
+            serialPort1.Write("Hello");
         }
     }
 }
