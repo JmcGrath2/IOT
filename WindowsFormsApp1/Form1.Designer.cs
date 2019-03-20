@@ -177,6 +177,7 @@
             this.SENDDATA.TabIndex = 12;
             this.SENDDATA.Text = "SEND DATA";
             this.SENDDATA.UseVisualStyleBackColor = true;
+            this.SENDDATA.Click += new System.EventHandler(this.SENDDATA_Click);
             // 
             // textBox1
             // 

@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        Class1 yes;
         public Form1()
         {
             InitializeComponent();
@@ -56,6 +57,11 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(err.Message,"ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
+        }
+
+        private void SENDDATA_Click(object sender, EventArgs e)
+        {
+            serialPort1.Write(yes.getCpuUsage() + yes.getAvailableRam());
         }
     }
 }
