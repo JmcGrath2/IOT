@@ -13,10 +13,13 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        Class1 yes;
         public Form1()
         {
             InitializeComponent();
+            foreach(string s in System.IO.Ports.SerialPort.GetPortNames())
+            {
+                comboBox1.Items.Add(s);
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -31,7 +34,11 @@ namespace WindowsFormsApp1
 
         private void CLOSE_Click(object sender, EventArgs e)
         {
+            serialPort1.Close();
+            progressBar1.Value = 0;
+            
 
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -59,9 +66,14 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void SENDDATA_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            serialPort1.Write("Hello");
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
