@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,10 +15,12 @@ namespace TxtWrite
     {
         public static PerformanceCounter cpuUsage = new PerformanceCounter("Processor", "% Processor Time", "_Total");
         public static PerformanceCounter ramUsage = new PerformanceCounter("Memory", "Available MBytes");
+        public static SerialPort port;
         
        public static void Main(string[] args)
         {
-            
+            port = new SerialPort
+
             string cpu = cpuUsage.NextValue() + "%";
             string ram = ramUsage.NextValue() + " MB";
 
