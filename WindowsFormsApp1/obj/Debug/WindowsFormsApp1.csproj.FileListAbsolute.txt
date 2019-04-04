@@ -18,3 +18,10 @@ C:\Users\s00189902\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsA
 C:\Users\s00189902\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\s00189902\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\s00189902\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\CeX\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\CeX\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\CeX\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\CeX\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\CeX\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\CeX\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\CeX\Documents\GitHub\IOT\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

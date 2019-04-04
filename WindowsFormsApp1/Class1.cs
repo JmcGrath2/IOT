@@ -12,11 +12,7 @@ namespace WindowsFormsApp1
        static PerformanceCounter cpu = new PerformanceCounter("Processor", "% Processor Time", "_Total");
        static PerformanceCounter ram = new PerformanceCounter("Memory", "Available MBytes");
 
-        static void Main()
-        {
-            getCpuUsage();
-            getAvailableRam();
-        }
+       
 
 
         public string getCpuUsage()
@@ -30,6 +26,21 @@ namespace WindowsFormsApp1
         {
             string availableWam = ram.NextValue()+"MB";
             return availableWam;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }

@@ -13,25 +13,25 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        Class1 yes;
+        
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
         private void CLOSE_Click(object sender, EventArgs e)
         {
-
+            serialPort1.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,7 +61,9 @@ namespace WindowsFormsApp1
 
         private void SENDDATA_Click(object sender, EventArgs e)
         {
-            serialPort1.Write(yes.getCpuUsage() + yes.getAvailableRam());
+            serialPort1.Write("hello");
         }
+
+        
     }
 }
